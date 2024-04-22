@@ -157,7 +157,7 @@ a:hover {
 	width: 94%;
 	height: 50%;
 	margin: 0 auto;
-	background-image: url('../img-old/tybj.png');
+	background-image: url('../img/tybj.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -349,7 +349,7 @@ a:hover {
 
 .rule-blue-text {
 	font-weight: bold;
-	color: #0086EC
+	color: #57aacb
 }
 
 .rule-red-text {
