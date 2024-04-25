@@ -387,7 +387,7 @@ a.yellow-color {
 }
 
 .buy-phone-coupon-list .list-item .list-item-main .main-title {
-	line-height: .27rem;
+	padding-top: 0.02rem;
 }
 
 /*** end
