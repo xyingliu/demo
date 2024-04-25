@@ -236,11 +236,11 @@ a.yellow-color {
 }
 
 .price-info {
-	height: 1.21rem;
+	min-height: 1.21rem;
 	background-image: url(../img/pay-info.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding: 0 .14rem;
+	padding: 0 0 0 .16rem;
 	font-size: 0.14rem;
 	line-height: 0.23rem;
 }
@@ -248,15 +248,16 @@ a.yellow-color {
 .price-info-title {
 	height: 0.16rem;
 	padding-top: 0.09rem;
+	padding-bottom: 0.09rem;
 }
 
 .price-info-content {
-	padding-top: 0.19rem;
+	padding-top: 0.14rem;
+	padding-bottom: 0.14rem;
 	font-size: .12rem;
 }
 
 .price-info-content .color-red-text {
-	font-weight: 500;
 	font-size: .14rem;
 	padding: 0 0.02rem;
 	display: inline-block;
@@ -387,6 +388,7 @@ a.yellow-color {
 
 .buy-phone-coupon-list .list-item .list-item-main .main-title {
 	padding-top: 0.03rem;
+	font-weight: 500;
 }
 
 /*** end
@@ -456,7 +458,7 @@ a.yellow-color {
 
 .current-price {
 	position: absolute;
-	right: -0.04rem;
+	right: -0.07rem;
 	bottom: -0.06rem;
 	width: 0.6rem;
 	height: .47rem;
@@ -465,6 +467,7 @@ a.yellow-color {
 	background-size: 100%;
 	color: #FFE28B;
 	font-size: 0.08rem;
+
 }
 
 .current-price .price-num {
@@ -475,6 +478,7 @@ a.yellow-color {
 
 .current-price .price-num span {
 	font-size: .13rem;
+	font-weight: 500;
 }
 
 .buy-phone-cheap-list .throw-icon {

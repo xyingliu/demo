@@ -6,19 +6,19 @@ const couponMaps = {
     className: 'silver-coupon',
     bg: './img/silver-coupon-bg.png',
     price: '50',
-    title: '银券',
+    title: '银 券',
   },
   gold: {
     className: 'gold-coupon',
     bg: './img/gold-coupon-bg.png',
     price: '100',
-    title: '金券',
+    title: '金 券',
   },
   platinum: {
     className: 'platinum-coupon',
     bg: './img/platinum-coupon-bg.png',
     price: '200',
-    title: '铂金券',
+    title: '白金券',
   },
   diamond: {
     className: 'diamond-coupon',
@@ -249,13 +249,13 @@ function setCouponsHtml({ bg, className, price, title }) {
  */
 function bindEle({ min, breachMoney, currentPrice }) {
   // price-info-num 您近三个月消费均值金额
-  $('.price-info-num').html(currentPrice)
+  $('.price-info-num').html('XXX')
 
   // price-promise-num 每月承诺消费金额
-  $('.price-promise-num').html(min)
+  $('.price-promise-num').html('XXX')
 
   // breach-money 业务规则缴纳违约金金额
-  $('.breach-money').html(breachMoney)
+  $('.breach-money').html('XXX')
 }
 
 /**
