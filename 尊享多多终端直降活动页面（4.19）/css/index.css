@@ -18,7 +18,7 @@ div {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	color: #525252;
+	/* color: #525252; */
 }
 
 html,
@@ -382,7 +382,7 @@ a.yellow-color {
 }
 
 .buy-phone-coupon-list .list-item .list-item-main .price span {
-	font-size: .14rem;
+	font-size: .16rem;
 	font-weight: bold;
 }
 
@@ -448,7 +448,7 @@ a.yellow-color {
 }
 
 .list-item-desc1 .color-red-text {
-	font-size: 0.12rem;
+	font-size: 0.11rem;
 }
 
 .yuan {
@@ -459,23 +459,23 @@ a.yellow-color {
 	position: absolute;
 	right: -0.04rem;
 	bottom: -0.06rem;
-	width: 0.7rem;
+	width: 0.6rem;
 	height: .47rem;
 	text-align: center;
 	background: url(./../img/throw.png) no-repeat center center;
 	background-size: 100%;
 	color: #FFE28B;
-	font-size: 0.09rem;
+	font-size: 0.08rem;
 }
 
 .current-price .price-num {
 	color: #fff;
-	font-size: .10rem;
-	padding-top: 0.03rem;
+	font-size: .09rem;
+	padding-top: 0.08rem;
 }
 
 .current-price .price-num span {
-	font-size: .15rem;
+	font-size: .13rem;
 }
 
 .buy-phone-cheap-list .throw-icon {
