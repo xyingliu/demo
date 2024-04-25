@@ -1,5 +1,5 @@
 /** @format */
-
+console.log(1111, 'index')
 // 购机直降券
 const couponMaps = {
   silver: {
