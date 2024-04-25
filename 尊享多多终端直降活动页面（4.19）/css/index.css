@@ -527,3 +527,8 @@ a.yellow-color {
 	padding-bottom: 0.4rem;
 	font-size: .13rem;
 }
+
+.rules a {
+	word-break: break-all;
+
+}
