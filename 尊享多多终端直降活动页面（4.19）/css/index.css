@@ -1,0 +1,530 @@
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #525252;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: #333;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	background-size: 100%;
+	background-position: center top;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+select,
+input,
+img,
+select {
+	vertical-align: middle;
+}
+
+input {
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: rgb(65, 107, 247);
+	text-decoration: none;
+}
+
+.color-dark-text {
+	font-weight: bold;
+	/* text-decoration: underline; */
+}
+
+.color-blue-text {
+	font-weight: bold;
+	color: #57aacb
+}
+
+.color-red-text {
+	color: #F35C27;
+	font-size: .11rem;
+}
+
+.yellow-color {
+	color: #FFFD67;
+}
+
+a.yellow-color {
+	text-decoration: underline;
+
+}
+
+.marginlr12 {
+	margin-left: 0.12rem;
+	margin-right: 0.12rem;
+
+}
+
+.padlr20 {
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+}
+
+.padlr10 {
+	padding-left: 0.08rem;
+	padding-right: 0.08rem;
+}
+
+
+.hide {
+	display: none !important;
+}
+
+/* 弹窗 */
+
+.modal {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.modal-bg {
+	width: 3.07rem;
+	height: 2.36rem;
+	background: url(./../img/dialog-bg.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -2.3rem;
+	margin-left: -1.53rem;
+}
+
+.close-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: 0.4rem;
+	left: 50%;
+	margin-left: -.19rem;
+	width: .3rem;
+
+}
+
+.close-icon img {
+	width: 100%;
+}
+
+.modal .handle-content {
+	text-align: center;
+	margin: .6rem auto 0;
+}
+
+.modal .handle-content img {
+	width: .5rem;
+}
+
+.modal .handle-content .text {
+	font-weight: 500;
+	font-size: .19rem;
+	color: #313131;
+	line-height: .24rem;
+	margin-bottom: .2rem;
+	margin-top: .14rem;
+
+
+}
+
+.modal .back-btn {
+	width: 1.95rem;
+	height: 0.57rem;
+	line-height: .5rem;
+	background: url(./../img/btn-bg.png) no-repeat center center;
+	background-size: 100%;
+	font-weight: 500;
+	font-size: .22rem;
+	color: #FFFFFF;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*** end 弹窗 */
+
+/** start 按钮 */
+.handle-btn {
+	width: 1.96rem;
+	height: .57rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.98rem;
+	bottom: -0.33rem;
+	line-height: 1;
+	color: #FFFEFE;
+	background: url(./../img/btn-bg.png) no-repeat center center;
+	background-size: 100%;
+}
+
+.handle-btn .handle-btn-text {
+	background-image: -webkit-linear-gradient(top, #FFFDF5, #FFFCE5, #FFEC80);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 0.18rem;
+	font-style: italic;
+	font-weight: 500;
+	/* text-align: center; */
+	line-height: 0.49rem;
+	display: block;
+	text-align: center;
+	width: 1.84rem;
+	word-spacing: 0.01rem;
+	letter-spacing: 0.01rem;
+}
+
+/** end 按钮 */
+/* end 公共样式 */
+
+
+.home {
+	height: 100%;
+	background: linear-gradient(to bottom left, #ff7503 10% 30%, #FF4700 100%);
+	overflow: auto;
+	position: relative;
+}
+
+.header-img {
+	display: block;
+}
+
+.price-ticket {
+	position: absolute;
+	z-index: 1;
+	width: 1rem;
+	left: 50%;
+	margin-left: -0.7rem;
+	top: 2.1rem;
+}
+
+.price-info {
+	height: 1.21rem;
+	background-image: url(../img/pay-info.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0 .14rem;
+	font-size: 0.14rem;
+	line-height: 0.23rem;
+}
+
+.price-info-title {
+	height: 0.16rem;
+	padding-top: 0.09rem;
+}
+
+.price-info-content {
+	padding-top: 0.23rem;
+	font-size: .13rem;
+}
+
+.price-info-content .color-red-text {
+	font-weight: 500;
+	font-size: .14rem;
+	padding: 0 0.02rem;
+	display: inline-block;
+}
+
+.buy-phone-coupon {
+	background: linear-gradient(to bottom, #FFF0EA, #FFFEFE);
+	position: relative;
+	font-size: 0.13rem;
+	margin-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	border-radius: 0.1rem;
+}
+
+/* 头部样式 */
+.buy-phone-coupon-header {
+	height: 0.5rem;
+	background: url(../img/buyphone-title.png) no-repeat top center;
+	background-size: 100%;
+	width: 1.8rem;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.5rem;
+	padding-top: 0.06rem;
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	border-radius: 0.12rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -.9rem;
+	top: -.23rem;
+	font-size: .15rem;
+}
+
+/*** 购机直降券包 */
+.buy-phone-coupon-list {
+	padding-top: 0.1rem;
+	display: flex;
+	justify-content: center;
+
+}
+
+.single-silver-coupon {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.1rem 0.2rem;
+}
+
+.single-silver-coupon img {
+	width: 100%;
+}
+
+.buy-phone-coupon-list .list-item {
+	margin: 0 1.5%;
+	background-size: 100%;
+	flex-grow: 0;
+	width: 22%;
+	position: relative;
+}
+
+/*** 券颜色 */
+.buy-phone-coupon-list .silver-coupon {
+	color: #7683BA;
+}
+
+.buy-phone-coupon-list .gold-coupon {
+	color: #EF7600;
+}
+
+.buy-phone-coupon-list .platinum-coupon {
+	color: #5D90FF
+}
+
+.buy-phone-coupon-list .diamond-coupon {
+	color: #BD72FF
+}
+
+.buy-phone-coupon-list .list-item img {
+	width: 100%;
+}
+
+.buy-phone-coupon .tips {
+	font-weight: 400;
+	font-size: .12rem;
+	color: #FF5100;
+	/* margin-left: -.1rem; */
+	padding: 0.1rem 0;
+	text-align: center;
+}
+
+.buy-phone-coupon .tips1 {
+	padding-top: 0.36rem;
+	text-align: center;
+	text-align: center;
+	padding-bottom: 0.10rem;
+	margin: 0 auto;
+}
+
+.buy-phone-coupon-list .list-item .list-item-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	font-size: .12rem;
+	text-align: center;
+}
+
+.buy-phone-coupon-list .list-item .list-item-main .expiry {
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 0.08rem;
+	font-style: italic;
+	text-align: center;
+	line-height: 0.13rem;
+}
+
+.buy-phone-coupon-list .list-item .list-item-main .price {
+	height: .5rem;
+	line-height: .5rem;
+}
+
+.buy-phone-coupon-list .list-item .list-item-main .price span {
+	font-size: .14rem;
+	font-weight: bold;
+}
+
+.buy-phone-coupon-list .list-item .list-item-main .main-title {
+	line-height: .27rem;
+}
+
+/*** end
+ 购机直降券包 */
+
+/*** start 购机直降钜划算 */
+.buy-phone-cheap {
+	margin-top: 0.72rem;
+	padding-bottom: 0.1rem;
+	display: flex;
+	flex-wrap: wrap
+}
+
+
+.buy-phone-cheap-list {
+	flex-wrap: wrap;
+	display: flex;
+	padding-bottom: 0.14rem;
+	align-items: center;
+	align-content: center;
+}
+
+.buy-phone-cheap-list .list-item {
+	background: #FFE4C7;
+	width: calc(50% - 0.08rem);
+	position: relative;
+	padding: 0 atuo;
+	border-radius: 0.1rem;
+	box-sizing: border-box;
+	margin: 0.06rem 0.04rem 0.1rem;
+	padding-bottom: 0.06rem;
+}
+
+.buy-phone-cheap-list .list-item .img-desc {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.06rem;
+	border-radius: 0.12rem;
+}
+
+.list-item-desc {
+	font-size: .08rem;
+	padding-left: 0.07rem;
+	display: flex;
+	align-items: center;
+}
+
+
+.buy-phone-cheap-list .list-item .list-item-desc1 {
+	font-size: 0.1rem;
+	line-height: 1.6;
+	padding-bottom: 0.02rem;
+}
+
+.list-item-desc .color-red-text {
+	font-weight: bold;
+}
+
+.list-item-desc1 .color-red-text {
+	font-size: 0.12rem;
+}
+
+.yuan {
+	font-size: .08rem;
+}
+
+.current-price {
+	position: absolute;
+	right: -0.04rem;
+	bottom: -0.06rem;
+	width: 0.7rem;
+	height: .47rem;
+	text-align: center;
+	background: url(./../img/throw.png) no-repeat center center;
+	background-size: 100%;
+	color: #FFE28B;
+	font-size: 0.09rem;
+}
+
+.current-price .price-num {
+	color: #fff;
+	font-size: .10rem;
+	padding-top: 0.03rem;
+}
+
+.current-price .price-num span {
+	font-size: .15rem;
+}
+
+.buy-phone-cheap-list .throw-icon {
+	width: 100%;
+}
+
+
+.buy-phone-cheap .handle-btn-coupon {
+	background: linear-gradient(to bottom, #FFBF00, #FF7100);
+	height: 0.4rem;
+	width: 80%;
+	margin: 0.1rem auto 0.1rem;
+	display: block;
+	text-align: center;
+	text-align: center;
+	border-radius: 0.09rem;
+
+}
+
+.buy-phone-cheap .handle-btn-coupon .handle-btn-text {
+	background-image: -webkit-linear-gradient(top, #FFFDF5, #FFFCE5, #FFEC80);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 0.15rem;
+	font-weight: bold;
+	line-height: 0.4rem;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+/*** end
+购机直降钜划算 */
+
+
+/*** 业务规则 */
+.rules-title {
+	background: linear-gradient(to right, #FEBE13, rgba(0, 0, 0, 0));
+	width: .81rem;
+	text-align: center;
+	color: #fff;
+	margin: 0.2rem 0 0.1rem;
+	line-height: 1.4;
+	font-size: .16rem;
+	padding-right: .1rem;
+}
+
+.rules {
+	color: #fff;
+	padding-bottom: 0.4rem;
+	font-size: .14rem;
+}

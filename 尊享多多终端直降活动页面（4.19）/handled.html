@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable"
+        content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="black">
+  <meta name="format-detection"
+        content="telephone=no">
+  <meta http-equiv="Cache-Control"
+        content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma"
+        content="no-cache" />
+  <meta name="wap-font-scale"
+        content="no">
+  <title>尊享多多终端直降活动</title>
+  <link rel="stylesheet"
+        href="./css/index.css?v=20240422_9">
+  <link rel="stylesheet"
+        href="./css/hadled.css" />
+</head>
+
+<body>
+  <div style="position: absolute;
+  z-index: 88; color: #fff;">
+    <span style="background-color: #ff9125;"
+          onClick="showModal({type: 'success'})"
+          class="handle-btn-text">办理成功</span>
+    <span style="background-color: #0091ff;"
+          onClick="showModal({type: 'failed'})"
+          class="handle-btn-text">办理失败</span>
+  </div>
+  <div class="home handled">
+    <div class="home-bg">
+      <img width="100%"
+           class="header-img"
+           src="./img/header-bg.png?v=20240422">
+      <img class="price-ticket"
+           src="./img/price-ticket.png">
+      <div class="marginlr12 tips">
+        <img class="finished-icon"
+             src="./img/finished-icon.png" />
+        <p class="content">
+          尊敬的客户， <br>您已办理此券包哦～
+        </p>
+        <p class="handle-btn use-btn"
+           onClick="showModal({type: 'success'})">
+          <span class="handle-btn-text">立即办理</span>
+        </p>
+      </div>
+      <!-- <p class="use-btn"><img src="./img/btn-bg.png" /><span>去使用</span></p> -->
+
+    </div>
+    <div class="modal hide">
+    </div>
+  </div>
+
+
+  <script src="./js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript"
+          src="./js/rem.js"></script>
+  <script type="text/javascript"
+          src="./js/jquery.rotate.min.js"></script>
+  <script type="text/javascript"
+          src="./js/home.js"></script>
+</body>
+
+</html>
