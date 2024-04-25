@@ -18,7 +18,6 @@ div {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/* color: #525252; */
 }
 
 html,
@@ -27,7 +26,7 @@ body {
 }
 
 body {
-	color: #333;
+	color: #525252;
 	font-size: 16px;
 	font-family: "Microsoft YaHei";
 	background-size: 100%;
@@ -189,7 +188,7 @@ a.yellow-color {
 	position: absolute;
 	left: 50%;
 	margin-left: -0.98rem;
-	bottom: -0.33rem;
+	bottom: -0.3rem;
 	line-height: 1;
 	color: #FFFEFE;
 	background: url(./../img/btn-bg.png) no-repeat center center;
@@ -204,7 +203,7 @@ a.yellow-color {
 	font-style: italic;
 	font-weight: 500;
 	/* text-align: center; */
-	line-height: 0.49rem;
+	line-height: 0.52rem;
 	display: block;
 	text-align: center;
 	width: 1.84rem;
