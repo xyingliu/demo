@@ -161,11 +161,12 @@ function setCurrentPriceLevel(currentPrice) {
   // 购机直降钜划算数据设置
   setPhoneCoupon({ phoneList })
   // 设置等级相应金额
-  if (currentPrice == '') {
+  if (!currentPrice) {
     currentPrice = 'XX'
     min = 'XX'
     breachMoney = 'XX'
   }
+  console.log(currentPrice)
   bindEle({ min, breachMoney, currentPrice })
 }
 
