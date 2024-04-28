@@ -147,7 +147,7 @@ const levelMaps = {
   },
 }
 
-let currentPrice = 200
+let currentPrice = ''
 init()
 async function init() {
   initModalDom()
@@ -161,6 +161,11 @@ function setCurrentPriceLevel(currentPrice) {
   // 购机直降钜划算数据设置
   setPhoneCoupon({ phoneList })
   // 设置等级相应金额
+  if (currentPrice == '') {
+    currentPrice = 'XX'
+    min = 'XX'
+    breachMoney = 'XX'
+  }
   bindEle({ min, breachMoney, currentPrice })
 }
 
