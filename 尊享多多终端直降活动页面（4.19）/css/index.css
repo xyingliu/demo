@@ -240,7 +240,7 @@ a.yellow-color {
 	background-image: url(../img/pay-info.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding: 0 0 0 .16rem;
+	padding: 0 .16rem;
 	font-size: 0.14rem;
 	line-height: 0.23rem;
 }
@@ -255,6 +255,8 @@ a.yellow-color {
 	padding-top: 0.14rem;
 	padding-bottom: 0.14rem;
 	font-size: .12rem;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .price-info-content .color-red-text {
