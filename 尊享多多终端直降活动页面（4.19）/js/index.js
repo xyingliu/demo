@@ -255,13 +255,13 @@ function setCouponsHtml({ bg, className, price, title }) {
  */
 function bindEle({ min, breachMoney, currentPrice }) {
   // price-info-num 您近三个月消费均值金额
-  $('.price-info-num').html(currentPrice)
+  $('.price-info-num').html('XX')
 
   // price-promise-num 每月承诺消费金额
-  $('.price-promise-num').html(min)
+  $('.price-promise-num').html('XX')
 
   // breach-money 业务规则缴纳违约金金额
-  $('.breach-money').html(breachMoney)
+  $('.breach-money').html('XX')
 }
 
 /**
