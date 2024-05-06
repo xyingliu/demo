@@ -128,7 +128,7 @@ const levelMaps = {
         oldrice: 9599,
       },
       {
-        descImg: './img/opporeno11.png',
+        descImg: './img/opporeno11pro.png',
         downPrice: 400,
         oldrice: 2899,
       },
@@ -211,12 +211,12 @@ function setCoupon({ couponList, min }) {
   if (min < 120) {
     $('.single-silver-coupon').removeClass('hide')
     $('.buy-phone-coupon-list').addClass('hide')
-    $('.tips').addClass('hide')
+    $('.buy-phone-coupon .tips').addClass('hide')
     $('.buy-phone-coupon-list').html(html)
   } else {
     $('.single-silver-coupon').addClass('hide')
     $('.buy-phone-coupon-list').removeClass('hide')
-    $('.tips').removeClass('hide')
+    $('.buy-phone-coupon .tips').removeClass('hide')
 
     couponList.forEach((item) => {
       html += setCouponsHtml(item)
