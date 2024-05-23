@@ -1,0 +1,440 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(0deg, #de4d21 0%, #e73c03 100%);
+}
+
+.container {
+  padding-bottom: 0.2rem;
+  padding-top: 0.1rem;
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.container header {
+  background: url(../images/card.png) no-repeat;
+  background-size: 100% 100%;
+  width: 6.4rem;
+  height: 4rem;
+  margin: 0.1rem auto;
+}
+
+.container .btn {
+  display: block;
+  background: url(../images/btn.png) no-repeat;
+  background-size: 100% 100%;
+  width: 6.4rem;
+  height: 1.2rem;
+  margin: 0 auto 0.25rem;
+  margin-top: .45rem;
+  margin-bottom: .45rem;
+}
+
+.feature {
+  background: url(../images/feature.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7rem;
+  height: 6.28rem;
+  margin: 0 auto;
+}
+
+.feature2 {
+  background: url(../images/feature2.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7rem;
+  height: 6.28rem;
+  margin: 0 auto;
+}
+
+.container .zf {
+  font-size: 0.26rem;
+  padding-bottom: 0.25rem;
+  box-shadow: 0px 0px 0.2rem 0.2rem #fff1dc inset, 0.1rem -0.05rem 0.5rem #962406;
+  background: #fff;
+  border-radius: 0.1rem;
+  width: 7rem;
+  margin: 0.4rem auto 0;
+  border: 0.045rem #fdad2f solid;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.container .zf2 {
+  font-size: 0.26rem;
+  padding-bottom: 0.25rem;
+  box-shadow: 0px 0px 0.2rem 0.2rem #fff1dc inset, 0.1rem -0.05rem 0.5rem #962406;
+  background: #fff;
+  border-radius: 0.1rem;
+  width: 7rem;
+  margin: 0.4rem auto 0;
+  border: 0.045rem #fdad2f solid;
+  position: relative;
+}
+
+.container .zf .title {
+  top: -0.48rem;
+  display: block;
+  position: absolute;
+  background: url(../images/title.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7rem;
+  height: 0.75rem;
+  left: -0.042rem;
+}
+
+.container .zf b {
+  font-weight: normal;
+  color: #eb3000;
+}
+
+.container .zf th {
+  background: #fff1dc;
+  padding: 0.33rem 0.2rem;
+  border-bottom: #fcd8c0 1px solid;
+  font-weight: 400;
+  text-align: center;
+  width: 24.2%;
+}
+
+.container .zf td {
+  padding: 0.33rem 0.2rem;
+  border-bottom: #fcd8c0 1px solid;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container .zf .con h4 {
+  font-size: 0.28rem;
+  text-align: center;
+  margin: 0.38rem auto;
+}
+
+.container .zf .con .step {
+  background: url(../images/step.png) no-repeat;
+  background-size: 100% 100%;
+  width: 5.94rem;
+  height: 1.19rem;
+  margin: 0 auto;
+}
+
+.container .zf .con .text {
+  top: 0.05rem;
+  left: 0.05rem;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid #efeff7 0.01rem;
+}
+
+.container .zf .con .text-box {
+  position: relative;
+  line-height: 0.35rem;
+  padding: 0.05rem 0.2rem;
+  /* text-align: center; */
+  color: #11136c;
+  font-size: 0.24rem;
+  margin: 0.34rem auto;
+  width: 6.03rem;
+  background: #f3f3f9;
+}
+
+.container .zf .con .text1 {
+  font-size: 0.26rem;
+  height: 0.48rem;
+  color: #ff0000;
+}
+
+.container .zf .con .text1 p {
+  margin: 0 auto;
+  width: 67%;
+  text-align: left;
+}
+
+.container .zf .con .text2 {
+  padding-top: 0.84rem;
+  justify-content: center;
+  display: flex;
+  background: url(../images/0.png) no-repeat;
+  background-size: 100% 100%;
+  width: 6.9rem;
+  height: 3.96rem;
+}
+
+.container .zf .con .text2 img {
+  width: 2.19rem;
+}
+
+.container .zf .con .text2 span {
+  font-size: 0.2rem;
+  display: block;
+  text-align: center;
+  margin-top: 0.05rem;
+}
+
+.container .item {
+  letter-spacing: 0.01rem;
+  text-align: justify;
+  font-size: 0.26rem;
+  background: url(../images/1.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7.5rem;
+  height: 4.87rem;
+  margin: 0 auto;
+  line-height: 0.44rem;
+  padding: 1.4rem 0.58rem 0;
+}
+
+.container .item4 {
+  letter-spacing: 0.01rem;
+  text-align: justify;
+  font-size: 0.26rem;
+  background: url(../images/1.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7rem;
+  height: auto;
+  margin: 0.4rem auto;
+  line-height: 0.44rem;
+  padding: .94rem .25rem .3rem;
+  border-radius: .1rem;
+  box-sizing: border-box;
+  position: relative;
+
+  box-shadow: 0px 0px 0.2rem 0.2rem #fff1dc inset,
+    0.1rem -0.05rem 0.5rem #962406;
+  border: 0.045rem #fdad2f solid;
+  background: #fff;
+}
+
+.container .item4 .text2 {
+  padding-top: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.container .item4 h3 {
+  position: absolute;
+  top: -.045rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  background: url(../images/1_txt.png) no-repeat;
+  background-size: 100% 100%;
+  width: 3.7rem;
+  height: .73rem;
+  margin: 0 auto .2rem;
+}
+
+.container .item4 .text2 img {
+  width: 4.21rem;
+}
+
+.container .item4 .text2 span {
+  font-size: 0.2rem;
+  display: block;
+  text-align: justify;
+  margin-top: 0.05rem;
+}
+
+.container .item1 {
+  padding-top: 1.2rem;
+  font-size: 0.27rem;
+  margin-top: -0.3rem;
+  background: url(../images/2.png) no-repeat;
+  background-size: 100% 100%;
+  width: 7.5rem;
+  height: 4.3rem;
+}
+
+.container .item1 p {
+  margin-top: 0.05rem;
+}
+
+.container .item2 {
+  padding-top: 0.5rem;
+}
+
+.container .item2 td {
+  padding: 0.2rem 0.1rem;
+  border-right: #fcd8c0 1px solid;
+}
+
+.container .item2 td span {
+  font-weight: bold;
+  color: #eb3000;
+}
+
+.container .item2 .title2 {
+  background: url(../images/bltj.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 6.27rem !important;
+  height: 0.75rem !important;
+}
+
+.container .item2 p {
+  line-height: 0.36rem;
+  text-align: center;
+  font-size: 0.22rem;
+  color: #656565;
+}
+
+.container .item2 p span {
+  color: #ef4b30;
+  font-size: 0.26rem;
+}
+
+.container .item2 .tag {
+  margin-top: 0.1rem;
+  line-height: 0.88rem;
+  color: #fff;
+  width: 100%;
+  height: 0.88rem;
+  background-image: -webkit-linear-gradient(0deg, #f66f06 0%, #f7993c 100%);
+  font-size: 0.28rem;
+  text-align: center;
+}
+
+.container .item3 {
+  padding: 0.32rem;
+  margin-top: 1rem;
+}
+
+.container .item3 .title3 {
+  background: url(../images/title2.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 7rem !important;
+  height: 0.75rem !important;
+}
+
+.zftitle4 {
+  background: url(../images/plus-vip.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 6rem !important;
+  height: 0.75rem !important;
+  display: inline-block;
+  position: absolute;
+  top: -0.45rem;
+  left: 50%;
+  margin-left: -3rem;
+}
+
+.container .plus-vip-table tr th {
+  width: 18%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container .plus-vip-table tr td {
+  padding: 0.33rem 0.1rem;
+  border-left: 0.01rem solid #f68c29;
+}
+
+.plus-vip-table tr td .red-text {
+  color: #ef4b30;
+  /* font-size: .34rem; */
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+/* 
+.container .plus-vip-table tr th {
+  width: 21%;
+} */
+
+.zftitle5 {
+  background: url(../images/bltj.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 3.5rem !important;
+  height: 0.7rem !important;
+  display: inline-block;
+  margin-top: -1rem;
+  /* position: absolute; */
+  /* top: -0.5rem; */
+  /* left: -0.03rem; */
+}
+
+.bltjbox {
+  text-align: center;
+}
+
+.container .item3 .item3-con h3 {
+  line-height: 0.86rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.28rem;
+}
+
+.container .item3 .item3-con p {
+  letter-spacing: 0.015rem;
+  text-align: justify;
+  font-size: 0.22rem;
+  line-height: 0.38rem;
+}
+
+.container .item3 .item3-con p b {
+  font-weight: bold;
+  color: #333333;
+}
+
+.btnact {
+  position: fixed;
+  z-index: 1;
+  bottom: .5rem;
+  left: .5rem;
+}
+
+.hdtime {
+  width: 6.62rem;
+  height: .59rem;
+  margin-bottom: .2rem;
+  text-align: center;
+  font-size: .26rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: auto;
+  background: #CA350C;
+  border-radius: .3rem;
+  border: 3px solid #FE921A;
+  margin: .35rem auto;
+}
+
+.bltj {
+  padding-top: .2rem !important;
+}
+
+.jc {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.spimg {
+  width: 6.7rem;
+}
+
+.tips {
+  margin-top: .25rem;
+  width: 100%;
+}
+
+.zbbox {
+  text-align: center;
+}
+
+.zb {
+  width: 7rem;
+}
+
+.tablebox {
+  margin: .25rem;
+}
+
+.tableimg {
+  width: 100%;
+}

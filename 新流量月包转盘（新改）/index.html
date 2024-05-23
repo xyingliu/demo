@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable"
+          content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black">
+    <meta name="format-detection"
+          content="telephone=no">
+    <meta http-equiv="Cache-Control"
+          content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma"
+          content="no-cache" />
+    <meta name="wap-font-scale"
+          content="no">
+    <title>流量月包专享优惠券</title>
+    <link rel="stylesheet"
+          href="./css/index.css?v=19">
+</head>
+
+<body class="index">
+    <div class="demo-btn">
+        <!-- *              1 您已成功参与本活动，感谢您的支持～
+        *              2 您本月已参与大转盘活动，下个月再来试试哦～
+        *              3 很遗憾！未中奖 -->
+        <button class="tip1"
+                onclick="showTips({type: 'tip1'})">'tip1'：您已成功参与本活动，感谢您的支持～</button>
+        <button class="tip2"
+                onclick="showTips({type: 'tip2'})">'tip2'：您本月已参与大转盘活动，下个月再来试试哦～</button>
+        <button class="tip3"
+                onclick="showTips({type: 'tip3'})">'tip3'：很遗憾！未中奖</button>
+
+
+    </div>
+    <div class="home-container">
+        <div>
+            <div class="header">
+                <img class="header-title"
+                     src="./img/header-title.png" />
+            </div>
+            <!-- 转盘抽奖内容 -->
+            <div class="rounder-wrap">
+                <!-- 转盘背景 -->
+                <div class="rounder-choise-bg">
+                    <!-- 转盘 -->
+                    <div id="panid"
+                         class="rounder-choise-circle">
+                    </div>
+                    <!-- 转盘红色圈 -->
+                    <img class="rounder-choise"
+                         src="./img/rounder-choise-circle.png" />
+                    <!-- 点击抽奖按钮 -->
+                    <img id="roundBtn"
+                         class="rounder-btn"
+                         src="./img/rounder-btn.png">
+
+                </div>
+                <div class="rounder-bg-bottom">
+                </div>
+                <div class="rounder-bg-bottom-cloud">
+                    <p class="playnum-wrap"
+                       style="font-size: 14px;color: white;text-align: center;">注：当月还有<span class="playnum"></span>抽奖机会
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;"
+             class="rule-wrap">
+            <div class="rule-bg"></div>
+
+            <div class="rulebox">
+                <div class="rule-title"><img src="./img/rule-title.png" /></div>
+                <div style="text-align: left;"
+                     class="rule-list">
+                    1、活动名称：
+                    <span class="rule-red-text">
+                        流量月包专享优惠券</span>活动。
+                    <br />
+
+                    2、活动时间：
+                    <span class="rule-dark-text">本活动为限时抽奖活动，活动每月进行随机抽奖，每月仅有一次抽奖机会，
+                        抽取中奖内容仅限当月办理，月底前未办理自动清除，具体奖品以中奖提示为准。限时活动提示：活动下线前会提前进行公示，活动下线后无法再参与。
+                    </span>
+                    <br />
+
+                    3、办理条件：本活动仅限抽中号码办理，客户可办理抽中档位、或向上升档办理其他指定档位，无法对指定产品外的其他产品使用折扣券。每个号码每个档位在24个月内仅有一次激活使用的机会。
+                    <br />
+
+
+                    4、<span class="rule-dark-text">
+                        有效期内享中国移动云盘权益，含100G移动网盘空间，
+                    </span>
+                    APP下载路径：
+                    <a class="rule-link"
+                       href="https://dwz.cn/VCmtcRPB">https://dwz.cn/VCmtcRPB
+                    </a>，
+                    可登录移动云盘APP上传/下载/备份您的文件/照片/视频，
+                    <span class="rule-dark-text">
+                        如您需单独取消中国移动云盘权益，可发送0000至10086退订。
+                    </span>
+                    <br />
+                    5、生效时间：若无互斥业务，本活动当月办理立即生效，套餐费和资源按整月计算。
+                    <br />
+                    6、承诺使用：本活动
+                    <span class="rule-dark-text"> 有效期24个月，到期自动失效</span>；有效期内需保持使用<span
+                          class="rule-red-text">流量月包专享优惠券</span>活动产品，并保持中国移动通信网络在网24个月。
+                    <br />
+                    <span class="rule-dark-text">
+                        7、提前取消：活动生效第1-3个月内取消不收取违约金，第4-23个月取消需缴纳违约金（违约金为一个月享受的优惠折扣金额），可通过营业厅或10086取消，活动取消后中国移动云盘权益同步取消。
+                        <br />
+
+                        8、所含资源：活动所含流量不可滚存和分享，均为国内不含港澳台流量，流量优先级高于套餐内流量。
+                    </span>
+                    <br />
+
+                    9、互斥业务：本活动与欢享券、新欢享券、惠享券、流量福袋、流量月包专享折扣券、流量月包折扣活动、流量月包折扣活动升级版、流量包有礼活动、新流量包有礼活动、放心用产品活动互斥。
+                    若欢享券、新欢享券、惠享券、流量福袋、流量月包专享折扣券、流量月包折扣活动、流量月包折扣活动升级版、流量包有礼活动、新流量包有礼活动、放心用产品当月到期，当月可办理“<span
+                          class="rule-red-text">流量月包专享优惠券</span>活动”，“<span
+                          class="rule-red-text">流量月包专享优惠券</span>活动”次月生效，若非当月到期，客户无法办理“<span
+                          class="rule-red-text">流量月包专享优惠券</span>活动”，需取消后才能办理，若取消后当月办理，“<span
+                          class="rule-red-text">流量月包专享优惠券</span>活动”次月生效。
+                    <br />
+                    <span class="rule-dark-text">
+                        10、套外规则：活动不影响客户套外规则，套外流量规则遵循原套餐。
+                    </span>
+                    <br />
+
+                    11、每月赠费不可退，不可用于第三方通信账户支付类消费、违约金。
+                    <br />
+
+                    12、如您有更多需求，请咨询10086。
+                    <br />
+
+                   13、 <span class="rule-red-text">
+                    流量月包专享优惠券</span>活动抽奖规则公示 <br />
+                    主办方：北京移动 <br />
+                    联系电话：10086 <br />
+                    参与条件：北京移动客户 <br />
+                    抽奖频次：每月一次，月末自动失效 <br />
+                    开奖方式：后台随机抽取 <br />
+                    奖品种类：月费优惠券 <br />
+                    中奖概率：25% <br />
+                    兑奖时间：当月兑换，月末失效 <br />
+                    <img src="./img/rule-table.png"
+                         alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗 具体显示内容在showTips方法中 -->
+    <div class="modal-tips">
+        <div class="modal-bg fade">
+            <div class="modal-bg-white">
+                <img class="tips-icon"
+                     src="./img/tip-success-green.png" />
+                <p class="tips-text">您本月已参与大转盘活动，<br />
+                    下个月再来试试哦～</p>
+                <button class="confirm-btn">
+                    我知道了
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript"
+            src="./js/rem.js"></script>
+    <script type="text/javascript"
+            src="./js/jquery.rotate.min.js"></script>
+    <script>
+        // 旋转js
+        var $roundBtn = $('#roundBtn');
+        var isRunning = false; //是否正在抽奖，true:抽奖中
+
+        /**
+         * @description: 
+         * @param {*} awards 中奖结果 3：未中奖
+         * @param {*} angle
+         * @param {*} text
+         * @return {*}
+         */
+        var rounderRotate = function ({ awards, angle, text }) {
+            $roundBtn.stopRotate();
+
+
+            $('#panid').rotate({
+                angle: 0,//旋转的角度数
+                duration: 4000, //旋转时间
+                animateTo: angle + 1455, //给定的角度,让它根据得出来的结果加上1440度旋转
+                callback: function () {
+
+                    isRunning = false
+                    if (awards === 2) {
+                        showTips({ type: 'tip3' })
+                    } else {
+                        window.location.href = `./win.html?awards=${awards}`;
+                    }
+                }
+            });
+        };
+        $(function () {
+            // 旋转的div
+            var playnum = 1; //当月抽奖次数，由后台传入
+            const playnumClass = $('.playnum')
+            playnumClass.html(playnum); //显示还剩下多少次抽奖机会
+            var clickRounderBtn = function () {
+                isRunning = true
+                var data = [1, 2, 3, 4, 5]; //抽奖
+                //data为随机出来的结果，根据概率后的结果
+                data = data[Math.floor(Math.random() * data.length)];//1~5的随机数
+
+                const prizeList = [
+                    {
+                        awards: 1,
+                        text: '135-90专享优惠券（45元55GB）'
+                    },
+                    {
+                        text: '谢谢参与',
+                        awards: 2,
+                    },
+                    {
+                        text: '90-55专享优惠券（35元25GB）',
+                        awards: 3,
+                    },
+                    {
+                        text: '75-55享优惠券（20元15GB）',
+                        awards: 4,
+                    },
+                    {
+                        text: '30-20专享优惠券（10元5GB）',
+                        awards: 5,
+                    }
+                ]
+                const current = prizeList.find(item => item.awards === data)
+                // awards, angle, text
+                rounderRotate({ ...current, angle: 72 * (data - 1) })
+            }
+            // 不需要次数的转盘转动
+            // $("#roundBtn").click(function () {
+            //     console.log("isRunning没进入抽奖", isRunning);
+            //     if (isRunning) return; // 如果在执行就退出
+            //     console.log("isRunning没进入抽奖222", isRunning);
+
+            //     clickRounderBtn();
+            // })
+            $(".confirm-btn").click(function () {
+                $(".modal-tips").hide();
+                $('.modal-bg').removeClass('show')
+                $('body').removeClass('hidden')
+            })
+
+            // 需要次数的转盘转动
+            $("#roundBtn").on("click", (function () {
+                // 当抽奖次数为0的时候执行
+                if (playnum == 0) {
+                    console.log("次数用完了");
+                    showTips({ type: 'tip2' })
+                    return
+                }
+                // 如果在执行就退出
+                if (isRunning) {
+                    console.log("正在执行中");
+                    return
+                };
+                isRunning = false; // 标志为 在执行
+                playnum = playnum - 1; //执行转盘了则次数减1
+                if (playnum <= 0) {
+                    playnum = 0;
+                }
+                playnumClass.html(playnum); //显示还剩下多少次抽奖机会
+                clickRounderBtn();
+                // rounderRotate();
+            }));
+        })
+
+        /**
+            * @description: 点击转盘后的弹窗
+            * @params type: 
+            *              1 您已成功参与本活动，感谢您的支持～
+            *              2 您本月已参与大转盘活动，下个月再来试试哦～
+            *              3 很遗憾！未中奖
+            * @return {*} 
+            */
+        function showTips({ type }) {
+            const typeMaps = {
+                'tip1': {
+                    src: './img/tip-success-red.png',
+                    tipText: '您已成功参与本活动，<br/>感谢您的支持～',
+                },
+                'tip2': {
+                    src: './img/tip-success-green.png',
+                    tipText: '您本月已参与大转盘活动，<br/>下个月再来试试哦～',
+                },
+                'tip3': {
+                    src: './img/tip-warning-blue.png',
+                    tipText: '很遗憾！未中奖',
+                }
+            }
+            const { src, tipText } = typeMaps[type]
+            $('body').addClass('hidden')
+            $('.modal-tips').show()
+            $('.modal-bg').show().addClass('show')
+
+            $('.tips-icon').attr('src', src)
+            $('.tips-text').html(tipText)
+        }
+    </script>
+</body>
+
+</html>

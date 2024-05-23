@@ -1,0 +1,342 @@
+.container {
+  width: 100%;
+  height: 9.47rem;
+  background: url("../img/bj.png") no-repeat;
+  background-size: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.content {
+  padding-top: 1.88rem;
+  position: relative;
+  padding-left: 0.07rem;
+  padding-right: 0.06rem;
+  padding-bottom: 0.16rem;
+}
+.coupon {
+  width: 3.38rem;
+  height: 0.85rem;
+  margin: 0 auto;
+  margin-bottom: 0.12rem;
+  background: url("../img/coupon.png") no-repeat;
+  background-size: 100%;
+}
+
+.need {
+  font-size: 0.13rem;
+  width: 0.5rem;
+  height: 0.21rem;
+  line-height: 0.2rem;
+  position: absolute;
+  top: 2.03rem;
+  right: 0.36rem;
+  background: url("../img/need.png") no-repeat;
+  background-size: 100%;
+  color: #f9e7cc;
+}
+.ItemDiv {
+  background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 0.3rem;
+}
+.right {
+  width: 0.19rem;
+  margin-right: 0.04rem;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 0.17rem;
+  padding-top: 0.08rem;
+  padding-bottom: 0.07rem;
+}
+
+.icon {
+  width: 0.26rem;
+  height: 0.33rem;
+  margin-right: 0.07rem;
+}
+
+.text {
+  font-size: 0.15rem;
+  color: #1c1c1c;
+}
+
+.ItemType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.15rem;
+}
+
+.Typebtn {
+  width: 1.62rem;
+  height: 0.4rem;
+  background: #f8f0e3;
+  border-radius: 0.06rem;
+  font-size: 0.15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actTypebtn {
+  font-weight: bold;
+  background: #ffde4a;
+  color: #313131;
+}
+
+.Typebtn2 {
+  width: 0.79rem;
+  height: 0.4rem;
+  background: #f8f0e3;
+  border-radius: 0.06rem;
+  font-size: 0.15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actTypebtn2 {
+  font-weight: bold;
+  background: #ffde4a;
+  color: #313131;
+}
+
+.Typebtn3 {
+  width: 0.79rem;
+  height: 0.4rem;
+  background: #f8f0e3;
+  border-radius: 0.06rem;
+  font-size: 0.15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actTypebtn3 {
+  font-weight: bold;
+  background: #ffde4a;
+  color: #313131;
+}
+
+.Typebtn4 {
+  width: 1.62rem;
+  height: 0.4rem;
+  background: #f8f0e3;
+  border-radius: 0.06rem;
+  font-size: 0.15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actTypebtn4 {
+  font-weight: bold;
+  background: #ffde4a;
+  color: #313131;
+}
+
+.dhimg {
+  width: 0.32rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.flowHot {
+  width: 0.51rem;
+  position: absolute;
+  top: -0.09rem;
+  right: 0;
+}
+.ItemType div:not(:last-child) img {
+  display: none;
+}
+
+.tipbox {
+  width: 3.375rem;
+  height: 0.33rem;
+  margin: auto;
+  font-size: 0.14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.22rem;
+  position: relative;
+  background-color: #fed961;
+  border-radius: 0.18rem;
+  color: #313131;
+}
+.hot {
+  width: 0.5rem;
+  position: absolute;
+  right: -0.13rem;
+  top: -0.09rem;
+  z-index: 3;
+  display: none;
+}
+
+.btnbox {
+  width: 3.37rem;
+  background: url("../img/btnbj1.png") no-repeat;
+  background-size: 100%;
+  font-weight: bold;
+  font-size: 0.23rem;
+  display: flex;
+  line-height: 0.45rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 0.19rem;
+}
+/* 设置灰色按钮 */
+.btnbox0 {
+  width: 3.37rem;
+  line-height: 0.45rem;
+  font-size: 0.23rem;
+  margin: 0 auto;
+  margin-top: 0.19rem;
+  background: url("../img/forbidden1.png") no-repeat;
+  background-size: 100%;
+  pointer-events: none;
+  color: #8c8c8c;
+}
+.money {
+  color: #fff668;
+  padding-left: 0.1rem;
+}
+
+.rulebox {
+  width: 3.6rem;
+  border: 0px solid;
+  margin: auto;
+  margin-top: 0.21rem;
+  text-align: center;
+}
+.RMB,
+.money,
+.btntext {
+  background: linear-gradient(180deg, #ffffff 0%, #fff991 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ruleimg {
+  width: 3.6rem;
+}
+
+.ruletext {
+  font-size: 0.13rem;
+  color: #2d2d2d;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0.15rem 0.15rem 0.02rem 0.15rem;
+  padding-bottom: 0.3rem;
+  background: url("../img/rulebg.png") no-repeat;
+  background-size: 100%;
+  text-underline-offset: 0.035rem;
+}
+
+.jc {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.share {
+  display: none;
+}
+
+/* 弹窗遮罩层 */
+.block1 {
+  width: 100%;
+  height: 165%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: #666;
+  z-index: 999;
+  overflow: hidden;
+}
+.block2 {
+  width: 100%;
+  height: 165%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: #666;
+  z-index: 999;
+  overflow: hidden;
+}
+/* 弹窗的内容 */
+.lose {
+  width: 3.04rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%; /* 元素顶部相对于视口垂直居中 */
+  left: 50%; /* 元素左侧相对于视口水平居中 */
+  transform: translate(-50%, -50%);
+  padding: 0.16rem 0.18rem 0.35rem 0.18rem;
+  background: url("../img/hint/background.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.lose h3 {
+  font-size: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #e30000;
+}
+.lose p {
+  font-size: 0.13rem;
+  color: #1b1b1b;
+  text-align: left;
+  line-height: 0.24rem;
+  margin-top: 0.06rem;
+  margin-bottom: 0.3rem;
+}
+.false {
+  width: 0.59rem;
+}
+.know {
+  width: 1.4rem;
+  line-height: 0.39rem;
+  font-weight: bold;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #ff4a03 0%, #ff4164 100%);
+  border-radius: 0.28rem;
+}
+.code {
+  font-size: 0.18rem;
+  background: linear-gradient(to bottom, #fff8f0, #fffa9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hide {
+  display: none;
+}
+
+.closeBtn {
+  width: 0.3rem;
+  position: absolute;
+  top: -0.6rem;
+  right: 0;
+}
+.btn {
+  position: absolute;
+  top: 0.06rem;
+  z-index: 66;
+}
+.manage {
+  position: absolute;
+  top: 0.02rem;
+  z-index: 666;
+}

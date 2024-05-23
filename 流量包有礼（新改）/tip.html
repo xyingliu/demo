@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>新流量包有礼活动</title>
+</head>
+<link rel="stylesheet"
+      href="./style/style.css">
+<link rel="stylesheet"
+      href="./css/tip.css?v=17">
+
+
+<body>
+    <div style="position: fixed;top: .2rem;left: .2rem;">
+        <button onclick="faildfun()">失败</button>
+        <button onclick="repeatfun()">重复办理</button>
+    </div>
+    <div class="container">
+        <div class="tipbox">
+            <div>
+                <img src="./image/success-icon.png"
+                     class="dhimg"
+                     alt="">
+            </div>
+            <div class="tiptxt">
+                您已办理此产品，<br>无需重复办理！
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"
+            src="./js/utils/jquery-3.6.js"></script>
+    <script src="./js/utils/rem.js"></script>
+    <script src="./js/utils/util.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        function faildfun() {
+            $('.dhimg').attr('src', './image/fail-icon.png')
+            $('.tiptxt').html('抱歉，您不符合办理条件！')
+        }
+
+        function repeatfun() {
+            $('.dhimg').attr('src', './image/success-icon.png')
+            $('.tiptxt').html('您已办理此产品，<br>无需重复办理！')
+        }
+        var params = getUrlParameters();
+        if (params.status == 'hasOperate') {
+            repeatfun()
+        } else {
+            faildfun() 
+        }
+
+
+        function getUrlParameters() {
+            var urlParams = {};
+            var match,
+                regex = /([^&=]+)=([^&]*)/g;
+            var searchString = window.location.search.substring(1);
+            while ((match = regex.exec(searchString))) {
+                var key = decodeURIComponent(match[1]);
+                var value = decodeURIComponent(match[2]);
+                urlParams[key] = value;
+            }
+            return urlParams;
+        }
+    </script>
+</body>
+
+
+</html>

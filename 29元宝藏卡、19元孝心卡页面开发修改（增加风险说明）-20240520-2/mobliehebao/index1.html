@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>中国移动</title>
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./css/ydui.css" />
+  <link rel="stylesheet" type="text/css" href="./css/iconfont1.css" />
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="filter hide">
+    <div class="agreement hide">
+      <div class="agreementFrame">
+        <div class="shut" style="display:flex; justify-content: end;">
+          <img src="./img/shut.png" alt="">
+        </div>
+        <iframe id="external-frame" src="./word/word1.html" frameborder="0" scrolling="no" id="test" width="98%"
+          height="100%"></iframe>
+      </div>
+    </div>
+    <div class="agreement2 hide">
+      <div class="agreementFrame">
+        <div class="shut" style="display:flex; justify-content: end;">
+          <img src="./img/shut.png" alt="">
+        </div>
+        <iframe id="external-frame" src="./word/word2.html" frameborder="0" scrolling="no" id="test" width="98%"
+          height="100%"></iframe>
+      </div>
+    </div>
+    <div class="agreement3 hide">
+      <div class="agreementFrame">
+        <div class="shut" style="display:flex; justify-content: end;">
+          <img src="./img/shut.png" alt="">
+        </div>
+        <iframe id="external-frame" src="./word/word3.html" frameborder="0" scrolling="no" id="test" width="98%"
+          height="100%"></iframe>
+      </div>
+    </div>
+    <div class="agreement4 hide">
+      <div class="agreementFrame">
+        <div class="shut" style="display:flex; justify-content: end;">
+          <img src="./img/shut.png" alt="">
+        </div>
+        <iframe id="external-frame" src="./word/word4.html" frameborder="0" scrolling="no" id="test" width="98%"
+          height="100%"></iframe>
+      </div>
+    </div>
+    <div class="agreement5 hide">
+      <div class="agreementFrame">
+        <div class="shut" style="display:flex; justify-content: end;">
+          <img src="./img/shut.png" alt="">
+        </div>
+        <iframe id="external-frame" src="./word/word5.html" frameborder="0" scrolling="no" id="test" width="98%"
+          height="100%"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- 对号 -->
+  <section class="mask" id="mask1">
+    <div class="mask-con">
+      <div class="top"></div>
+      <div class="mid">
+        您在本业务受理单勾选，即表明您同意中国移动根据中移电子商务有限公司（简称“和包支付”）的委托核实您的身份，并由和包平台为您开立和包支付账户及基础功能。
+      </div>
+      <div class="bot">知道了</div>
+    </div>
+  </section>
+  <!-- 问号 -->
+  <section class="mask" id="mask2">
+    <div class="mask-con">
+      <div class="top"></div>
+      <div class="mid">
+        和包支付是中国移动面向个人和企业客户提供的一项综合性移动支付业务。用户开通和包支付,
+        即享方便快捷的线上支付（互联网购物、充话费、生活缴费等）；持NFC手机和NFC-SIM卡的用户，更可享和包刷卡功能，把银行卡、公交卡、会员卡装进手机里，实现特约商家（便利店、商场、公交、地铁等）线下消费。
+      </div>
+      <div class="bot">知道了</div>
+    </div>
+  </section>
+
+  <!-- 测试使用的按钮以及样式 end -->
+  <section class="mask1" id="mask0">
+    <div class="mask-con">
+      <div class="search">
+        <input class="ipt ipt3" type="tel" novalidate="novalidate" pattern="[0-9]*" placeholder="输入您喜欢的3-11位数字" />
+        <i class="iconfont icon-sousuo"></i>
+      </div>
+      <div class="mask-loding">
+        <img src="./img/loding.gif" alt="" />
+        <div class="tit">正在搜索...</div>
+      </div>
+      <div class="mask-cry" style="display: none">
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+        <div class="item">15313722991</div>
+      </div>
+      <div class="mask-fotter" style="display: none">
+        <i class="iconfont icon-jiazaizhong"></i>
+        <div class="mask-change">换一批</div>
+      </div>
+      <i class="iconfont icon-guanbi"></i>
+    </div>
+  </section>
+
+  <div class="page">
+    <!-- <div class="box box0">
+      <span class="black"></span>
+      <span>资料填写</span>
+    </div> -->
+
+    <div class="box box3"><span class="icon_a"></span>选择号码</div>
+    <div class="box box1">
+      <span class="w160">套餐方案</span>
+      <span>29元宝藏卡·首月免月租-29元/月</span>
+    </div>
+    <div class="box box2">
+      <span class="w160">选择号码</span>
+      <span id="ipt3" class="sipt" type="text">请选择号码</span>
+      <i class="iconfont icon-dayu"></i>
+    </div>
+    <div class="box box3"><span class="icon_a"></span>入网信息</div>
+    <div class="box box4">
+      <span class="w160">机主姓名</span>
+      <input class="ipt" type="text" placeholder="请输入身份证姓名" />
+    </div>
+    <div class="box box5">
+      <span class="w160">身份证号</span>
+      <input class="ipt" type="text" placeholder="请输入身份证号" />
+    </div>
+    <div class="box box3"><span class="icon_a"></span>收货信息</div>
+    <div class="box box6">
+      <span class="w160">联系电话</span>
+      <input class="ipt" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)"
+        placeholder="请输入收货人联系电话" />
+    </div>
+    <div class="box box7">
+      <span class="w160">所在地区</span>
+      <input type="text" class="cell-input ipt" readonly id="J_Address" value="" placeholder="请选择市/区/镇" />
+    </div>
+    <div class="box box8">
+      <span class="w160">详细地址</span>
+      <input class="ipt" id="address" type="text" placeholder="街道/镇＋村/小区/写字楼＋门牌号" />
+    </div>
+    <!-- 阅读并同意 -->
+    <div class="btnWrap">
+      <div class="newipt">
+        <span class="sbtn"></span>
+      </div>
+      <div class="newtxt">
+        <a class="ina">我已阅读并同意</a>
+        <a class="ins"> 《北京市电话通信业务入网服务合同》F版</a>、
+        <a class="ins"> 《北京市电话通信业务入网服务合同》补充条款F版</a>、
+        <a class="ins"> 中国移动通信集团北京有限公司电话卡合规使用告知书</a>、
+        <a class="ins"> 《承诺低消获“吉祥号码”服务协议》A版</a>、
+        <a class="ins"> 《承诺低消获“吉祥号码”服务协议》C版</a>
+      </div>
+    </div>
+    <div class="copy_cont">
+      <div class="con1" style="padding: 0.5rem;text-align: left;">
+        <div style="font-size: .22rem;">
+          风险提示：<span id="code">已知晓不得转租转售电话卡，出现的法律风险由本人承担。</span>
+        </div>
+        <div class="copybtn" onclick="copy()"
+          style="color: #ea9518;font-size: .22rem;padding: 0.1rem 0;display: flex;justify-content: flex-end;">
+          <img src="./img/iconcopy.png" style="width: .28rem;margin-right: 0.1rem;" alt=""><span>复制并粘贴</span>
+        </div>
+        <div>
+          <input class="copybox" id="copybox" oninput="change()"
+            style="width: 6.5rem; height: 0.8rem;border-radius: 5px;border: 1px solid #cdcdcd; font-size: .22rem;padding: 10px;"
+            type="text" value="" placeholder="请完整输入上述风险提示文字" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="kt"><span class="zbtn"> </span>同时为我开通和包支付<span class="wh"></span></div>
+    <div class="fw"><a class="ins">《和包支付业务用户服务协议》</a><a class="ins">《和包支付隐私权政策》</a></div> -->
+    <div class="btnNext">免费领卡</div>
+    <!-- 温馨提示 -->
+    <div class="box box3"><span class="icon_a"></span>温馨提示</div>
+    <div class="box9">
+      <div class="con1">
+        <p>
+          【实名激活】号卡将由物流人员为您实名激活，需现场采集人像照片，请您准备好身份证并由本人签收。<br>因物流激活服务范围，疫情管控等原因，部分地址可能无法配送，感谢您的理解。
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/rem.js"></script>
+<script type="text/javascript" src="./js/ydui.citys.js"></script>
+<script type="text/javascript" src="./js/ydui.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+<script>
+  !(function () {
+    var $target = $('#J_Address')
+    $target.citySelect()
+    $target.on('click', function (event) {
+      event.stopPropagation()
+      $target.citySelect('open')
+    })
+    $target.on('done.ydui.cityselect', function (ret) {
+      console.log(ret)
+      $(this).val(ret.country + ' ' + ret.provance + ' ' + ret.city + ' ' + ret.area)
+    })
+  })()
+  // 按钮
+  $('.btn').click(function () {
+    window.location.href = '' // 产生记录
+  })
+  // 协议展示
+  $(".ins").click(function () {
+    $('.filter').removeClass('hide');
+    $('body').css('overflow', 'hidden');
+    var index = $(this).index(".ins");
+    console.log(index);
+    var agreements = ['.agreement', '.agreement2', '.agreement3', '.agreement4', '.agreement5'];
+    agreements.forEach(function (agreement, i) {
+      if (i === index) {
+        $(agreement).removeClass('hide');
+      } else {
+        $(agreement).addClass('hide');
+      }
+    });
+  });
+
+  $('.shut img').click(function () {
+    $('body').css('overflow', '');
+    $('.filter').addClass('hide');
+    $('.agreement').addClass('hide');
+    $('.agreement2').addClass('hide');
+    $('.agreement3').addClass('hide');
+    $('.agreement4').addClass('hide');
+    $('.agreement5').addClass('hide');
+  });
+
+  // 监听事件
+  function change() {
+    var obj = document.getElementById("copybox").value;
+    var ss = $(".sbtn").attr("val");
+    console.log(obj.length);
+    if (obj.length == 26 && ss == 2 && obj == "已知晓不得转租转售电话卡，出现的法律风险由本人承担。") {
+      $(".btnNext").addClass('btnNext1');
+      $(".sbtn").addClass('sbtn1');
+      $(".sbtn").attr("val", '2')
+    } else {
+      $(".btnNext").removeClass('btnNext1');
+      $(".sbtn").addClass('sbtn1');
+      $(".sbtn").attr("val", '2')
+    }
+  }
+  // 复制功能
+  function copy() {
+    const div = document.getElementById("code");
+    const input = document.createElement("input");
+    var ss = $(".sbtn").attr("val");
+    document.body.appendChild(input);
+    input.value = div.innerText;
+    input.select();
+
+    try {
+      if (document.execCommand("copy", false)) {
+        var obj = document.getElementById("copybox");
+        obj.value = "已知晓不得转租转售电话卡，出现的法律风险由本人承担。";
+        $(".sbtn").addClass('sbtn1');
+        $(".btnNext").addClass('btnNext1')
+        $(ss).attr("val", '2')
+      } else {
+        alert("复制失败");
+      }
+    } catch (error) {
+      console.log(error, "error")
+    } finally {
+      input.remove();
+    }
+  }
+</script>
+
+</html>

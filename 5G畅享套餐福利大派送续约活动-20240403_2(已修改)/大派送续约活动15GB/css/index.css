@@ -1,0 +1,66 @@
+.container {
+  padding: 12.89rem 0.23rem 0.32rem 0.25rem;
+  background: url("../images/back15.png") no-repeat;
+  background-size: 100%;
+  margin-top: -0.2rem;
+}
+.pic {
+  text-align: center;
+}
+.container img {
+  width: 4.2rem;
+}
+.rule {
+  font-size: 0.24rem;
+  color: #fff;
+  line-height: 0.38rem;
+  margin-top: 1.64rem;
+  padding: 0.26rem 0.2rem 0.32rem 0.15rem;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.05rem;
+}
+
+/* 弹窗 */
+.filter {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.frame {
+  padding: 0.53rem 0 0.13rem;
+  background: url("../images/frameBG.png") no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.explain {
+  font-size: 0.35rem;
+  line-height: 0.78rem;
+  margin: 0.39rem 1.36rem 0.81rem;
+  color: #1e1e1e;
+}
+.shut {
+  width: 1.1rem;
+}
+.confirm {
+  width: 3.09rem;
+}
+.close {
+  width: 0.51rem;
+  position: absolute;
+  top: -1rem;
+  right: 0;
+}
+.hide {
+  display: none;
+}

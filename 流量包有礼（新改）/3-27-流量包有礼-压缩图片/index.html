@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>新流量包有礼活动</title>
+</head>
+<link rel="stylesheet"
+      href="./style/style.css">
+<link rel="stylesheet"
+      href="./css/index.css?a=16">
+
+<body>
+    <!-- 测试 -->
+    <div style="position: fixed;top: 0;left: 0;">
+        <button style="margin-top: .2rem;"
+                onclick="hide()">隐藏部分</button>
+        <button style="margin-top: .2rem;"
+                onclick="expend()">显示全部</button>
+        <button style="margin-top: .2rem;"
+                onclick="showPop('#success')">成功</button>
+        <button style="margin-top: .2rem;"
+                onclick="showPop('#faild')">失败</button>
+        <button style="margin-top: .2rem;"
+                onclick="showPop('#Nogear')">选择档位</button>
+
+        <button style="margin-top: .2rem;"
+                onclick="jumpPages({status: 'hasOperate'})">跳转已办理过</button>
+        <button style="margin-top: .2rem;"
+                onclick="jumpPages({status: 'hasNotFit'})">跳转不符合办理条件</button>
+        
+       
+    </div>
+    <div class="container">
+        <div   class="header">
+            <!-- <img src="./image/header.png"
+                 class="header"
+                 alt=""> -->
+        </div>
+        <div class="infobox">
+            <div class="list">
+                <img src="./image/10gba.png"
+                     class="Gearimg"
+                     onclick="gearfun(0)"
+                     alt="">
+                <img src="./image/20gb.png"
+                     class="Gearimg"
+                     onclick="gearfun(1)"
+                     alt="">
+                <img src="./image/30gb.png"
+                     class="Gearimg"
+                     onclick="gearfun(2)"
+                     alt="">
+                <img src="./image/40gb.png"
+                     class="Gearimg"
+                     onclick="gearfun(3)"
+                     alt="">
+            </div>
+            <div class="ckbox">
+                <div class="ckbtn expendBtn"
+                     onclick="expend()">
+                    查看更多
+                </div>
+
+                <div class="ckbtn hideBtn"
+                     onclick="hide()">
+                    收起
+                </div>
+            </div>
+            <div class="btn1box">
+                <img src="./image/btn.png"
+                     class="btn1"
+                     alt="">
+            </div>
+        </div>
+        <div class="rulebox">
+            <div class="textbox">
+                <span class="jc2">1.活动名称：新流量包有礼活动</span><br>
+                <span class="jc2">2.活动时间：<span class="jc">本活动为限时活动，活动到期下线后无法办理，活动下线前会通过移动官方渠道进行下线公告。</span></span><br>
+                <span class="jc2">3.办理条件：<span
+                          class="jc">近1年内（N-11月至N月）生效过以下活动的客户</span>（欢享券、新欢享券、惠享券、流量福袋、流量月包专享折扣券、流量月包折扣活动、流量月包折扣活动升级版、流量包有礼活动）。
+                </span><br>
+                <span class="jc2">4.所含资源：活动所含流量均不可滚存、不可分享，不含港澳台流量。通用流量优先级高于套餐内流量，晚间流量优先级低于定向流量及短促流量，高于套餐内流量。
+                </span>
+                <br>
+                <span class="jc2">5.合约期：生效后有效期24个月，到期自动续订。可通过10086热线或营业厅取消活动，取消当月月末失效。</span><br>
+                <span class="jc2">6.套外流量规则：活动不影响客户套外规则，套外流量规则遵循原套餐。</span><br>
+                <span class="jc2">7.有效期内享中国移动云盘权益，含100G移动网盘空间， </span>APP下载路径：
+                <a href="https://dwz.cn/VCmtcRPB">https://dwz.cn/VCmtcRPB</a>，可登录移动云盘APP上传/下载/备份您的文件/照片/视频，
+                <span class="jc2">如您需单独取消中国移动云盘权益，可发送0000至10086退订。</span>
+
+                <br>
+                <span>
+                    8.若无互斥业务，当月办理立即生效，套餐费和资源按整月计算。
+                </span>
+                <br>
+                <span>
+                    9.互斥业务：①活动与放心用产品为单向互斥，即办理了放心用产品的客户，需要在产品到期次月（或取消次月）才能办理“新流量包有礼活动”，办理了“新流量包有礼活动”的客户，可以直接办理放心用产品，且“新流量包有礼活动”不取消。②活动与欢享券、新欢享券、惠享券、流量福袋、流量月包专享折扣券、流量月包折扣活动、流量月包折扣活动升级版、流量包有礼活动、新流量包有礼活动互斥，若互斥业务当月到期，当月可办理本产品，次月生效，若非当月到期，客户无法办理，需取消后才能办理。
+                </span>
+                <br>
+                <span>
+                    10.每月赠费不可退，不可用于第三方通信账户支付类消费、违约金。
+                </span>
+                <br>
+                <span>
+                    11.如有更多需求，请咨询10086。
+                </span>
+                <br>
+            </div>
+        </div>
+    </div>
+      <!-- 成功弹窗 -->
+      <div class="popup"
+      id="success">
+     <div class="pop1box">
+         <div>
+             <img src="./image/close-icon.png"
+                  class="closeimg"
+                  onclick="closePop('#success')"
+                  alt="">
+         </div>
+         <div class="popimgbox">
+             <img src="./image/success-icon.png"
+                  class="popimg"
+                  alt="">
+         </div>
+         <div class="pop1txt">
+             办理成功
+         </div>
+         <div class="btn2box">
+             <p class="modal-btn-bg"
+                class="btn2"
+                onclick="closePop('#success')">
+                 返回
+             </p>
+         </div>
+     </div>
+ </div>
+ <!-- 失败弹窗 -->
+ <div class="popup faild-popup"
+      id="faild">
+     <div class="pop1box">
+         <div>
+             <img src="./image/close-icon.png"
+                  class="closeimg"
+                  onclick="closePop('#faild')"
+                  alt="">
+         </div>
+         <div class="popimgbox">
+             <img src="./image/fail-icon.png"
+                  class="popimg"
+                  alt="">
+         </div>
+         <div class="pop1txt">
+             很遗憾，办理失败<br>
+             感谢您的理解与支持
+         </div>
+         <div class="btn2box">
+             <p class="modal-btn-bg"
+                class="btn2"
+                onclick="closePop('#faild')">
+                 返回
+             </p>
+         </div>
+     </div>
+ </div>
+ <!-- 请选择产品档位弹窗 -->
+ <div class="popup"
+      id="Nogear">
+     <div class="pop2box">
+         <div>
+             <img src="./image/close-icon.png"
+                  class="closeimg"
+                  onclick="closePop('#Nogear')"
+                  alt="">
+         </div>
+         <div class="popimgbox2">
+             <img src="./image/fail-icon.png"
+                  class="popimg"
+                  alt="">
+         </div>
+         <div class="pop2txt">
+             请选择产品档位
+         </div>
+         <div class="btn2box">
+             <p class="modal-btn-bg"
+                class="btn2"
+                onclick="closePop('#Nogear')">
+                 返回
+             </p>
+             <!-- <img src="./image/back.png"
+                  class="btn2"
+                  onclick="closePop('#Nogear')"
+                  alt=""> -->
+         </div>
+     </div>
+ </div>
+    <script type="text/javascript"
+            src="./js/utils/jquery-3.6.js"></script>
+    <script src="./js/utils/rem.js"></script>
+    <script src="./js/utils/util.js?version=4"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        hide() 
+        function hide() {
+            $('.Gearimg').eq(0).hide()
+            $('.Gearimg').eq(1).hide()
+            $('.expendBtn').show()
+            $('.hideBtn').hide()
+
+        }
+        function expend() {
+            $('.Gearimg').eq(0).show()
+            $('.Gearimg').eq(1).show()
+            $('.expendBtn').hide()
+            $('.hideBtn').show()
+        }
+        function gearfun(p) {
+            $('.Gearimg').eq(0).attr('src', './image/10gb.png')
+            $('.Gearimg').eq(1).attr('src', './image/20gb.png')
+            $('.Gearimg').eq(2).attr('src', './image/30gb.png')
+            $('.Gearimg').eq(3).attr('src', './image/40gb.png')
+            switch (p) {
+                case 0:
+                    $('.Gearimg').eq(p).attr('src', './image/10gba.png')
+                    break;
+                case 1:
+                    $('.Gearimg').eq(p).attr('src', './image/20gba.png')
+                    break;
+                case 2:
+                    $('.Gearimg').eq(p).attr('src', './image/30gba.png')
+                    break;
+                case 3:
+                    $('.Gearimg').eq(p).attr('src', './image/40gba.png')
+                    break;
+            }
+        }
+        /**
+         * @description: 跳转不符合条件办理、已办理过页面
+         * @param {*} status
+         * @return {*}
+         */        
+        function jumpPages({status}) {
+            window.location.href=  `./tip.html?status=${status}`
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet"
+          href="./css/reset.min.css" />
+    <link rel="stylesheet"
+          href="./css/index.css" />
+    <title></title>
+</head>
+
+<body>
+    <button class="hint"
+            onclick="handleOpenClick()">办理失败</button>
+    <div class="block hide">
+        <div class="lose">
+            <img class="star StarLeft1"
+                 src="./images/ResultPage/StarLeft.png"
+                 alt="" />
+            <img class="star StarRight1"
+                 src="./images/ResultPage/StarRight.png"
+                 alt="" />
+            <div class="back">
+                <img class="LoseFace"
+                     src="./images/ResultPage/lose.png"
+                     alt="" />
+                <h3>很遗憾，办理失败，<br />感谢您的支持与理解。</h3>
+                <img class="confirm2"
+                     src="./images/ResultPage/confirm.png"
+                     alt="" />
+            </div>
+            <img class="closeBtn"
+                 onclick="handleShutClick()"
+                 src="./images/ResultPage/close.png"
+                 alt="">
+        </div>
+    </div>
+    <div class="container">
+        <header></header>
+        <main>
+            <img class="star StarLeft"
+                 src="./images/HomePage/StarLeft.png"
+                 alt="" />
+            <img class="star StarRight"
+                 src="./images/HomePage/StarRight.png"
+                 alt="" />
+            <div class="FlowCoupon">
+                <div class="title">
+                    <img class="little"
+                         src="./images/HomePage/FlowMarker.png"
+                         alt="" />
+                    <span class="word1">每月获得50GB流量+1000分钟语音</span>
+                </div>
+                <img class="FlowImg"
+                     src="./images/HomePage/FlowCoupon1.png"
+                     alt="" />
+                <div class="flow1">
+                    <h3>50GB流量</h3>
+                    <p>1000分钟语音</p>
+                    <i>(不含港澳台)</i>
+                </div>
+            </div>
+            <div style="height: 0.2rem"></div>
+            <div class="member">
+                <div class="title1">
+                    <img class="little"
+                         src="./images/HomePage/diamond.png"
+                         alt="" />
+                    <span class="word">每月获得Plus灵活会员</span>
+                    <span>(价值:19.9元/月)</span>
+                </div>
+                <p class="description1">
+                    每月可领亿通行权益
+                </p>
+                <p class="description2">
+                    (20元立减金）
+                </p>
+            </div>
+            <div class="content2">
+                <div class="cardTitle">
+                    <img src="./images/HomePage/card.png"
+                         alt="">
+                    <span>可享受全球通金卡</span>
+                </div>
+                <div class="flowGold">
+                    <div class="goldCard">
+                        全球通金卡
+                    </div>
+                </div>
+                <div class="littleCard">
+                    <div class="cardLeft">
+                        机场/高铁 贵宾厅<span>4次</span>
+                    </div>
+                    <div class="cardMiddle">携程<span>黄金会员</span></div>
+                    <div class="cardRight">国漫<span>流量月包</span>
+                        <p class="flowBag">5<span>GB</span></p>
+                    </div>
+                </div>
+                <!-- <div class="confirm">
+                    <img class="commit" src="./images/HomePage/commit.png" alt="" />
+                    <img class="hand" src="./images/HomePage/hand.gif" alt="" />
+                </div> -->
+            </div>
+            <div class="explain">
+                <p>您近三个月消费均值是<span>XXX</span>元</p>
+                <p>
+                    合约期24个月，需每月承诺消费<span>XXX</span>元</p>
+            </div>
+        </main>
+        <footer>
+            <div class="rule">
+                <img src="./images/HomePage/BusinessRule.png"
+                     alt="" />
+                <p>
+                    1、入网6个月以上用户可参与本活动，<b class="underLine">活动办理后立即生效，有效期24个月。</b>
+                </p>
+                <p>
+                    2、<b
+                       class="underLine">需承诺每月实付通信费不低于xx元，若您同时办理其他承诺消费类业务时，每月承诺的最低消费额度将就高计算。</b>若整月停机，当月仍按XX元扣费。每月通信费不含购买非通信类产品的费用、违约金，以及为其他人代付的费用。可点击<a
+                       href="https://dx.10086.cn/EbbkDg">https://dx.10086.cn/EbbkDg</a>查询不纳入通信费低消的业务清单。
+                </p>
+                <p>
+                    3、<b
+                       class="underLine">每月获得XXGB国内通用流量(不含港澳台)，流量不可分享、结转与转赠，优先级同套内国内通用流量</b>。如客户有达量限速产品，当月全月国内合计通用流量用尽将限制上网速率不高于1Mbps，当月累计使用流量达到200GB后将限制上网速率不高于128Kbps。次月网速自动恢复。若在购买此产品前已限速，办理本流量包无法打开限速速率。
+
+                </p>
+                <p>
+                    4、<b
+                       class="underLine">每月获得Plus灵活会员(含1张权益兑换券)</b>，您需每月自助兑换，权益券仅当月有效。可享受的Plus会员服务/可领取的权益/每款权益可兑换的次数可能会因相关合作协议及管理规定不定期调整，请您以当月会员页面实时展示为准。兑换路径:
+                    登录中国移动APP-权益超市，或点击链接<a href="https://dx.10086.cn/jOyIGQ">https://dx.10086.cn/jOyIGQ</a>。
+                </p>
+                <p>
+                    5、<b class="underLine">自当前协议签署日起，至活动有效期结束，须持续使用中国移动网络。</b>
+                </p>
+                <p>6、您可前往营业厅或拨打10086取消本活动。如您有更多需求，请咨询10086。</p>
+                <p style="margin-bottom: .10rem; font-weight: 500;">亿通行权益须知：</p>
+                <p style="margin-bottom: .08rem;">
+                    （1）领取权益后直接使用亿通行APP二维码或亿通行Pay·秒通卡乘车使用，每天可用1次，每次立减1元，满1.01元可用，共计20次，不限支付渠道。</p>
+                <p style="margin-bottom: .08rem;">
+                    （2）权益兑换后，立即生效，有效期为生效后30*24小时。可在亿通行app-我的-周月卡处查看，月卡到账后，即可直接使用亿通行二维码或亿通行Pay·秒通卡乘车使用。</p>
+                <p style="margin-bottom: .08rem;"> （3）月卡自动发放至与兑换手机号相同的亿通行账户内，每月最多可领取2次，可叠加使用。</p>
+            </div>
+        </footer>
+        <div class="commit2">
+            立即办理
+        </div>
+    </div>
+</body>
+<script src="./utils/jquery-3.6.js"></script>
+<script src="./utils/rem.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    function handleOpenClick() {
+        $(".block").removeClass("hide");
+    }
+    function handleShutClick() {
+        $(".block").addClass("hide");
+    }
+</script>
+
+</html>

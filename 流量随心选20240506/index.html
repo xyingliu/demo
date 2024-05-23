@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>流量随心选</title>
+</head>
+<link rel="stylesheet"
+      href="./style/style.css" />
+<link rel="stylesheet"
+      href="./css/index.css" />
+
+<body>
+  <div style="font-size: 0.1rem; width: 0.8rem;background-color: #dcdcdc; text-align: center; line-height: 0.2rem;position:fixed;top:0.1rem;left:0.05rem;box-sizing:border-box;border:0.01rem solid #666; z-index: 3;color:#000"
+       class="btn"
+       onclick="handleopenfrime()">限速状态</div>
+
+  <div class="block1 hide">
+    <div class="lose">
+      <img class="false"
+           src="./img/hint/lose.png"
+           alt=""><br>
+      <h3 class="title1">您不符合业务办理条件！</h3>
+      <p>
+        可详询10086查询无法办理原因。如您订购的随心选档位已达到办理次数上限，请您关注其他档位或北京移动其他活动，谢谢您的参与!
+      </p>
+      <div class="know"
+           onclick="handleShutClick()"><span class="code">知道了</span></div>
+      <img class="closeBtn"
+           src="./img/hint/shut.png"
+           alt=""
+           onclick="handleShutClick()" />
+    </div>
+  </div>
+  <div class="block2 hide">
+    <div class="lose">
+      <img class="false"
+           src="./img/hint/lose.png"
+           alt=""><br>
+      <h3 class="title1"></h3>
+      <p style="text-indent: 2em;">
+        尊敬的客户，您目前处于限速状态，暂无法办理当前业务，您可通过办理XXX解除限速。感谢您的理解!
+      </p>
+      <div class="know"
+           onclick="handleShutClick()"><span class="code">前往XXX</span></div>
+      <img class="closeBtn"
+           src="./img/hint/shut.png"
+           alt=""
+           onclick="handleShutClick()" />
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="coupon">
+        <!-- <div class="couponBox">
+          <div class="card">
+            <b>100</b><span>GB</span>
+          </div>
+          <div class="indate">
+            <p><b>7天有效期</b></p>
+            <span>区域流量不可分享</span>
+          </div>
+          <div class="sum">20¥</div>
+        </div> -->
+      </div>
+      <div class="need">
+        仅需
+      </div>
+      <div class="ItemDiv">
+        <div class="tipbox">
+          <img class="right"
+               src="./img/right.png"
+               alt="">
+          <b style="color: #CB0000;">已选：</b>
+          <b>
+            <span id="typetip">区域流量</span>，<span id="daytip">7天</span>
+            <span id="flowtip">10GB</span>流量包，
+          </b>
+          <span class="private">不可分享</span>
+          <span class="share">可分享</span>
+          <img src="./img/hot.png"
+               class="hot"
+               alt="" />
+        </div>
+        <div class="title">
+          <img src="./img/one.png"
+               class="icon"
+               alt="" />
+          <div class="text">选流量额度</div>
+        </div>
+        <div class="ItemType"
+             id="flow">
+          <!-- <div class="Typebtn2 actTypebtn2">
+                        <div>5GB</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn2">
+                        <div>10GB</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn2">
+                        <div>30GB</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn2">
+                        <div>100GB</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div> -->
+        </div>
+        <div class="title">
+          <img src="./img/two.png"
+               class="icon"
+               alt="" />
+          <div class="text">选有效期</div>
+        </div>
+        <div class="ItemType"
+             id="day">
+          <!-- <div class="Typebtn3 actTypebtn3">
+                        <div>1天</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn3">
+                        <div>3天</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn3">
+                        <div>5天</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn3">
+                        <div>7天</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div> -->
+        </div>
+        <div class="title">
+          <img src="./img/three.png"
+               class="icon"
+               alt="" />
+          <div class="text">选流量类型</div>
+        </div>
+        <div class="ItemType">
+          <div class="Typebtn"
+               data-id="0">
+            <div>国内通用</div>
+            <img src="./img/hot.png"
+                 class="dhimg"
+                 alt="" />
+          </div>
+          <div class="Typebtn actTypebtn"
+               data-id="1">
+            <div>区域流量</div>
+            <img src="./img/hot.png"
+                 class="dhimg"
+                 alt="" />
+          </div>
+        </div>
+        <div class="title">
+          <img src="./img/four.png"
+               class="icon"
+               alt="" />
+          <div class="text">选是否分享</div>
+        </div>
+        <div class="ItemType"
+             id="whether">
+          <!-- <div class="Typebtn4 actTypebtn4">
+                        <div>是</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div>
+                    <div class="Typebtn4">
+                        <div>否</div>
+                        <img src="./img/dh.png" class="dhimg" alt="">
+                    </div> -->
+        </div>
+        <div class="btnbox0 hide">请选择办理</div>
+        <div class="btnbox"
+             onclick="handleopenClick()">
+          <span class="RMB">¥</span>
+          <span class="money">10</span>
+          <span class="btntext">办理</span>
+        </div>
+      </div>
+
+      <div class="rulebox">
+        <div>
+          <img src="./img/rule.png"
+               class="ruleimg"
+               alt="" />
+        </div>
+        <div class="ruletext">
+
+          （1）页面所展示的“国内通用”为国内通用流量（不含港澳台），<span class="jc">优先级高于套内国内通用流量，高于定向流量；</span>
+          页面展示的“区域流量”，指可在北京的商圈、景点、校园、生活区域等地使用的流量，<span class="jc">优先级高于套内国内通用流量，低于定向流量。</span>
+          <br />
+          （2）本活动的流量产品3日包单自然月内仅能订购3次；5日包单自然月内最多2次；7日包单自然月内最多1次。<br />
+          <span class="jc">（3）流量不可转赠。</span><br />
+          （4）流量有效期为办理当天自然延顺对应天数至24点失效，例如1号办理3天包，则为4日24点失效。<br />
+          （5）如客户当月生效达量限速业务、并处于限速状态时，无法办理此产品。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript"
+          src="./js/utils/jquery-3.6.js"></script>
+  <script src="./js/utils/rem.js"></script>
+  <script src="./js/utils/util.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    let Inidid = 1;
+    function handleShutClick() {
+      $(".block1").addClass("hide");
+      $(".block2").addClass("hide");
+    }
+    // $(".manage").click(function () {
+    //   $(".block").removeClass("hide");
+    // })
+    function handleopenClick() {
+      $(".block1").removeClass("hide");
+    }
+    function handleopenfrime() {
+      $(".block2").removeClass("hide");
+    }
+    // 设置初始的激活索引值
+    active.flow = 1;  // 第二个Typebtn2
+    active.day = 3;   // 第四个Typebtn3
+    active.yn = 1;    // 第二个Typebtn4
+
+    // 调用 init 函数，传入 Inidid 参数
+    init(Inidid);
+    function init(id) {
+      $("#flow").empty();
+      $("#whether").empty();
+      $("#day").empty();
+      products[id].subcategories.forEach((e, i) => {
+        $("#flow").append(`
+                <div class="Typebtn2" data-flow="${i}" onclick="Typebtn2fun(${i})">
+                    <div class="name">${e.name}</div>
+                    <img src="./img/hot.png" class="dhimg" alt="">
+                    <img src="./img/flowHot.png" class="flowHot" alt="">
+                    </div>
+                `);
+      });
+      $(".Typebtn2").removeClass("actTypebtn2");
+      $(".Typebtn2").eq(active.flow).addClass("actTypebtn2");
+      products[id].subcategories[active.flow].prices.forEach((e, i) => {
+        $("#day").append(`
+                        <div class="Typebtn3" data-day="${i}" onclick="Typebtn3fun(${i})">
+                            <div>${e.days}</div>
+                        </div>
+                `);
+      });
+      $(".Typebtn3").removeClass("actTypebtn3");
+      $(".Typebtn3").eq(active.day).addClass("actTypebtn3");
+      let obj = products[id].subcategories[active.flow].prices[active.day];
+      $("#whether").append(`
+                            <div class="Typebtn4" data-yn="0" onclick="Typebtn4fun(0)">
+                                <div id="price1" data-price="${obj.price1}">是</div>
+                                <img src="./img/hot.png" class="dhimg" alt="">
+                            </div>
+                            <div class="Typebtn4" data-yn="1" onclick="Typebtn4fun(1)">
+                                <div id="price2" data-price="${obj.price2}">否</div>
+                            </div>
+                `);
+      $(".Typebtn4").removeClass("actTypebtn4");
+      $(".Typebtn4").eq(active.yn).addClass("actTypebtn4");
+    }
+    init(Inidid);
+
+    // 点击事件，符合一定情景展示特定效果
+    $(".Typebtn").click(function () {
+      $(".Typebtn").removeClass("actTypebtn");
+      $(this).addClass("actTypebtn");
+      Inidid = $(".actTypebtn").attr("data-id");
+      active.id = $(".actTypebtn").attr("data-id");
+      init(Inidid);
+      RenderdDom();
+      if (Inidid == 0) {
+        if (active.flow == 0 && active.yn == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      } else if (Inidid == 1) {
+        if (active.flow == 0 && active.yn == 0) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (active.flow == 0 && active.yn == 1) {
+          $(".Typebtn3").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (active.flow == 1 && active.yn == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      }
+    });
+    function Typebtn2fun(i) {
+      active.flow = i;
+      init(Inidid);
+      RenderdDom();
+      if (active.flow == 0) {
+        if (Inidid == 1 && active.yn == 0) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 1 && active.yn == 1) {
+          $(".Typebtn3").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 0 && active.yn == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      } else if (active.flow == 1) {
+        if (Inidid == 1 && active.yn == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      }
+    }
+    function Typebtn3fun(i) {
+      active.day = i;
+      init(Inidid);
+      RenderdDom();
+      if (active.day == 3) {
+        if (Inidid == 1 && active.yn == 0 && active.flow == 0) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 1 && active.yn == 1 && active.flow == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 0 && active.yn == 1 && active.flow == 0) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      }
+    }
+    function Typebtn4fun(i) {
+      active.yn = i;
+      init(Inidid);
+      RenderdDom();
+      if (active.yn == 0) {
+        if (Inidid == 1 && active.flow == 0)
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+      } else if (active.yn == 1) {
+        if (Inidid == 0 && active.flow == 0) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 1 && active.flow == 0) {
+          $(".Typebtn3").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        } else if (Inidid == 1 && active.flow == 1) {
+          $(".Typebtn3:not(:last-child)").css({
+            "background-color": "#ECECEC",
+            "pointer-events": "none",
+            color: "#BBB8B8",
+          });
+        }
+      }
+    }
+
+    function RenderdDom() {
+      $("#typetip").html($(".actTypebtn").children("div").html());
+      $("#daytip").html($(".actTypebtn3").children("div").html());
+      $("#flowtip").html($(".actTypebtn2").children("div").html());
+      $(".money").html($(".actTypebtn4").children("div").attr("data-price"));
+
+      // 添加热度套餐，标识
+      const hotArr = [
+        [1, 3, 2, 0],
+        [0, 3, 2, 1],
+        [0, 2, 3, 1],
+        [0, 3, 3, 1],
+      ];
+      const flag = hotArr.some(([val1, val2, val3, val4] = item) => {
+        if (
+          Inidid == val1 &&
+          active.flow == val2 &&
+          active.day == val3 &&
+          active.yn == val4
+        ) {
+          return true;
+        }
+      });
+
+      if (flag) {
+        $(".hot").css({ display: "block" });
+      } else {
+        $(".hot").css({ display: "none" });
+      }
+
+      // 确认订购置灰
+      const isCondition = Inidid == 1 && active.flow == 0 && active.yn == 1,
+        isCondition1 = Inidid == 0 && active.flow == 0 && active.yn == 1 && (active.day == 0 || active.day == 1 || active.day == 2),
+        isCondition2 = Inidid == 1 && active.flow == 0 && active.yn == 0 && (active.day == 0 || active.day == 1 || active.day == 2),
+        isCondition3 = Inidid == 1 && active.flow == 1 && active.yn == 1 && (active.day == 0 || active.day == 1 || active.day == 2);
+      if (isCondition || isCondition1 || isCondition2 || isCondition3) {
+        $(".btnbox").addClass("hide")
+        $(".btnbox0").removeClass("hide")
+        $(".tipbox").addClass("hide")
+      } else {
+        $(".btnbox").removeClass("hide")
+        $(".btnbox0").addClass("hide")
+        $(".tipbox").removeClass("hide")
+        if (active.yn == 0) {
+          $(".share").css("display", "block");
+          $(".private").css("display", "none");
+        } else if (active.yn == 1) {
+          $(".private").css("display", "block");
+          $(".share").css("display", "none"); // 还原为默认值（可能是 "block" 或 "inline" 等）
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>

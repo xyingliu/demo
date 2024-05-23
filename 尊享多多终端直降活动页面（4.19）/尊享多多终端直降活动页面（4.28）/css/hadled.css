@@ -1,0 +1,33 @@
+.handled {}
+
+.handled .tips {
+  border-radius: 0.1rem;
+  padding: .5rem 0 .8rem;
+  margin-top: 0.2rem;
+  background: linear-gradient(to bottom, #FFEEE6, #fff);
+  position: relative;
+
+}
+
+.finished-icon {
+  width: .47rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.handled .content {
+  height: 45px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  font-size: 19px;
+  color: #525252;
+  line-height: 27px;
+  text-align: center;
+  padding-top: .2rem;
+}
+
+.use-btn {
+  width: 1.9rem;
+  margin-top: -0.24rem;
+  bottom: -0.29rem;
+}
